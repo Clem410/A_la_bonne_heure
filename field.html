@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html>
+        <head>
+            <title> À la Bonne Heure </title>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="css/grille.css">
+            <link rel="stylesheet" href="css/main.css">
+            <link href="https://fonts.googleapis.com/css2?family=Recursive&display=swap" rel="stylesheet">
+        </head>
+
+        <body>
+            <!-- NAV - Menu -->
+            <div class="sticky">
+                <nav>
+                    <a class="boutonmobile" href="javascript: bascule_affichage('menu');">&#x2630;</a>
+                    <ul id="menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="field.html">Field Watches</a></li>
+                        <li><a href="class.html">Class Watches</a></li>
+                        <li><a href="luxe.html">Luxe Watches</a></li>
+                        <li><a href="recap.html">Watches List</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="wrap"> <!-- Le contenu respecte la GRID -->
+                
+                
+                <!-- HEADER - En-tête -->
+                <header>
+                    <section id="header" class="grid-wrap">
+                        <div class="titre col-12">
+                            <h1>Les Field Watches</h1>
+                            <p><em>Les grands Classiques de l'Horlogerie</em></p>
+                        </div>
+                    </section>
+                </header>
+                
+                
+                <!-- MAIN - Contenu principal de la page -->
+                <main>
+                
+                    <!-- SECTION casio -->
+                    <section id="casio" class="grid-wrap">
+                        <div class="soustitre col-12">
+                            <h2>La Casio F91-W</h2>
+                        </div>
+                        <div class="texte texte1 col-12 med-6 xs-12">
+                            <h3>Design</h3>
+                            <p>Nous vous offrons des modèles de sites personnalisables.</p>
+                        </div>
+                    </section>
+                    <!-- Fin de la section -->
+
+                    <!-- SECTION Hamilton -->
+                    <section id="hamilton" class="grid-wrap">
+                        <div class="soustitre col-12">
+                            <h2>La Hamilton Khaki Field</h2>
+                        </div>
+                        <div class="texte texte1 col-12 med-6 xs-12">
+                            <h3>Design</h3>
+                            <p>Nous vous offrons des modèles de sites personnalisables.</p>
+                        </div>
+                    </section>
+                    <!-- Fin de la section -->
+
+                    <!-- SECTION Hamilton -->
+                    <section id="Merci" class="grid-wrap">
+                        <div class="soustitre col-12">
+                            <h2>La LMM-01 Field Watch</h2>
+                        </div>
+                        <div class="texte texte1 col-12 med-6 xs-12">
+                            <h3>Design</h3>
+                            <p>Nous vous offrons des modèles de sites personnalisables.</p>
+                        </div>
+                    </section>
+                    <!-- Fin de la section -->
+                
+                
+                </main>
+                
+                
+                <!-- Footer - Pied de page -->
+                <footer>
+                    <h4>Web Services</h4>
+                    <p><a href="#">Haut de la page</a></p>
+                    <p>Création Web Services - <a href="http://www.webservices.com" title="site Web Services" >www.webservices.com</a></p>
+                </footer>
+                
+                
+                <!-- ------------------ -->
+                </div><!-- Fin div.wrap -->
+                    
+                <script>
+                    function bascule_affichage(id) {
+                        bloc = document.getElementById(id);
+                        bloc.classList.toggle("visible");
+                    }
+                </script>
+        </body>
+</html>

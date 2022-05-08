@@ -1,0 +1,127 @@
+@charset "utf-8";
+/* Grille complète grillef v.grid01 (peut remplacer la version simplifiée grillefsimple.css v.01 - classes compatibles) */
+
+/* Conteneur => classe .grid-wrap   +  classe supplémentaire pour obtenir une gouttière : .grid-gts (gouttière "small" : 1%), .grid-gt (gouttière standard : 2%), .grid-gtl (gouttière "large" : 3%)
+   Contenu sur n colonnes (n = 0 à 12) => cas général .col-n, ou suivant la largeur d'écran : .xl-n (extra large), .lrg-n (large), .mlrg-n (medium large), .med-n (medium), .sml-n (small), .xs-n (extra small)
+   Largeurs d'écran :   .xl-   1200px   .lrg-   1024px   .mlrg-   800px   .med-   640px   .sml-   480px   .xs-   */
+
+/* Exemple d'utilisation => titre h3 en pleine largeur, blocs div alignés par 4, puis par 2 (écran < 800px), puis en pleine largeur (écran < 480px) :
+<section class="grid-wrap">
+  <h3 class="col-12"> ... </h3>
+  <div class="col-3 med-6 xs-12"> ... ... ... </div>
+  <div class="col-3 med-6 xs-12"> ... ... ... </div>
+  <div class="col-3 med-6 xs-12"> ... ... ... </div>
+  <div class="col-3 med-6 xs-12"> ... ... ... </div>
+</section>
+
+Exemple de conteneur avec une gouttière entre les blocs contenus (gouttières .grid-gts, .grid-gt et .grid-gtl => 1%, 2% et 3%) :
+  <section class="grid-wrap grid-gt">
+    ... ... ... ... ...
+  </section>
+*/
+
+/* Conteneur et colonnes */
+/* ===================== */
+    /* Conteneur : classe grid-wrap (wrap = envelopper) */
+    .grid-wrap { display: grid; grid-template-columns: repeat(12, 1fr); justify-content: space-between; }
+    /* Contenu = balises directement imbriquées dans le conteneur */
+    .grid-wrap > * { box-sizing: border-box; margin-left: 0; margin-right: 0; }
+
+
+/* Largeurs de colonne dans le cas général */
+/* ======================================= */                                  .col-0  { display: none;        }
+    .col-1  { grid-column: span 1;  }    .col-2  { grid-column: span 2;  }     .col-3  { grid-column: span 3;  }
+    .col-4  { grid-column: span 4;  }    .col-5  { grid-column: span 5;  }     .col-6  { grid-column: span 6;  }
+    .col-7  { grid-column: span 7;  }    .col-8  { grid-column: span 8;  }     .col-9  { grid-column: span 9;  }
+    .col-10 { grid-column: span 10; }    .col-11 { grid-column: span 11; }     .col-12 { grid-column: span 12; }
+
+
+/* Largeurs de colonne suivant la taille de l'écran */
+/* ================================================ */
+/* xl screen > 1200px */
+@media only screen and (min-width: 1200px) {                                 .xl-0  { display: none;        }
+    .xl-1  { grid-column: span 1;  }    .xl-2  { grid-column: span 2;  }     .xl-3  { grid-column: span 3;  }
+    .xl-4  { grid-column: span 4;  }    .xl-5  { grid-column: span 5;  }     .xl-6  { grid-column: span 6;  }
+    .xl-7  { grid-column: span 7;  }    .xl-8  { grid-column: span 8;  }     .xl-9  { grid-column: span 9;  }
+    .xl-10 { grid-column: span 10; }    .xl-11 { grid-column: span 11; }     .xl-12 { grid-column: span 12; }
+} /* End @media only screen and (min-width: 1200px) */
+
+/* lrg (large) screen < 1200px  [usually 1024-1200] */
+@media only screen and (max-width: 1199px) {                                   .lrg-0  { display: none;        }
+    .lrg-1  { grid-column: span 1;  }    .lrg-2  { grid-column: span 2;  }     .lrg-3  { grid-column: span 3;  }
+    .lrg-4  { grid-column: span 4;  }    .lrg-5  { grid-column: span 5;  }     .lrg-6  { grid-column: span 6;  }
+    .lrg-7  { grid-column: span 7;  }    .lrg-8  { grid-column: span 8;  }     .lrg-9  { grid-column: span 9;  }
+    .lrg-10 { grid-column: span 10; }    .lrg-11 { grid-column: span 11; }     .lrg-12 { grid-column: span 12; }
+} /* End @media only screen and (max-width: 1199px) */
+
+/* mlrg (medium large) screen < 1024px  [usually 800-1024] */
+@media only screen and (max-width: 1023px) {                                   .med-0  { display: none;        }
+    .mlrg-1  { grid-column: span 1;  }    .mlrg-2  { grid-column: span 2;  }     .mlrg-3  { grid-column: span 3;  }
+    .mlrg-4  { grid-column: span 4;  }    .mlrg-5  { grid-column: span 5;  }     .mlrg-6  { grid-column: span 6;  }
+    .mlrg-7  { grid-column: span 7;  }    .mlrg-8  { grid-column: span 8;  }     .mlrg-9  { grid-column: span 9;  }
+    .mlrg-10 { grid-column: span 10; }    .mlrg-11 { grid-column: span 11; }     .mlrg-12 { grid-column: span 12; }
+} /* End @media only screen and (max-width: 1023px) */
+
+/* med (medium) screen < 800px  [usually 640-800] */
+@media only screen and (max-width: 799px) {                                    .sml-0  { display: none;        }
+    .med-1  { grid-column: span 1;  }    .med-2  { grid-column: span 2;  }     .med-3  { grid-column: span 3;  }
+    .med-4  { grid-column: span 4;  }    .med-5  { grid-column: span 5;  }     .med-6  { grid-column: span 6;  }
+    .med-7  { grid-column: span 7;  }    .med-8  { grid-column: span 8;  }     .med-9  { grid-column: span 9;  }
+    .med-10 { grid-column: span 10; }    .med-11 { grid-column: span 11; }     .med-12 { grid-column: span 12; }
+} /* End @media only screen and (max-width: 799px) */
+
+/* sml (small) screen < 600px  [usually 480-640] */
+@media only screen and (max-width: 639px) {                                    .tny-0   { display: none;        }
+    .sml-1  { grid-column: span 1;  }    .sml-2  { grid-column: span 2;  }     .sml-3  { grid-column: span 3;  }
+    .sml-4  { grid-column: span 4;  }    .sml-5  { grid-column: span 5;  }     .sml-6  { grid-column: span 6;  }
+    .sml-7  { grid-column: span 7;  }    .sml-8  { grid-column: span 8;  }     .sml-9  { grid-column: span 9;  }
+    .sml-10 { grid-column: span 10; }    .sml-11 { grid-column: span 11; }     .sml-12 { grid-column: span 12; }
+} /* End @media only screen and (max-width: 639px) */
+
+/* xs screen < 480px */
+@media only screen and (max-width: 479px) {                                  .xs-0  { display: none;        }
+    .xs-1  { grid-column: span 1;  }    .xs-2  { grid-column: span 2;  }     .xs-3  { grid-column: span 3;  }
+    .xs-4  { grid-column: span 4;  }    .xs-5  { grid-column: span 5;  }     .xs-6  { grid-column: span 6;  }
+    .xs-7  { grid-column: span 7;  }    .xs-8  { grid-column: span 8;  }     .xs-9  { grid-column: span 9;  }
+    .xs-10 { grid-column: span 10; }    .xs-11 { grid-column: span 11; }     .xs-12 { grid-column: span 12; }
+} /* End @media only screen and (max-width: 479px) */
+
+
+
+/* ******************************************* */
+/*      Espacement horizontal                  */
+/* ******************************************* */
+.alignH-stretch { justify-content: stretch;      }
+.alignH-start   { justify-content: start;        }    .alignH-end     { justify-content: end;           }
+.alignH-center  { justify-content: center;       }    .alignH-between { justify-content: space-between; }
+.alignH-around  { justify-content: space-around; }    .alignH-evenly  { justify-content: space-evenly;  }
+/* ******************************************* */
+/*      Alignement vertical                    */
+/* ******************************************* */
+.alignV-stretch { align-content: stretch;      }
+.alignV-start   { align-content: start;        }      .alignV-end     { align-content: end;           }
+.alignV-center  { align-content: center;       }      .alignV-between { align-content: space-between; }
+.alignV-around  { align-content: space-around; }      .alignV-evenly  { align-content: space-evenly;  }
+
+
+
+
+/* ============================================================================================================ */
+/* AVEC GOUTTIÈRE "small", standard ou "large" : espacement entre colonnes de 1%, 2% ou 3%                      */
+/*                                               avec classe grid-gts, grid-gt ou grid-gtl pour le conteneur    */
+/* ============================================================================================================ */
+/* Espacement des colonnes et des rangées */
+.grid-gts { grid-gap: 1%; gap: 1%; }
+.grid-gt  { grid-gap: 2%; gap: 2%; }
+.grid-gtl { grid-gap: 3%; gap: 3%; }
+
+/* Espacement des colonnes seulement */
+.grid-col-gts { grid-column-gap: 1%; column-gap: 1%; }
+.grid-col-gt  { grid-column-gap: 2%; column-gap: 2%; }
+.grid-col-gtl { grid-column-gap: 3%; column-gap: 3%; }
+
+/* Espacement des rangées seulement */
+.grid-row-gts { grid-row-gap: 1%; row-gap: 1%; }
+.grid-row-gt  { grid-row-gap: 2%; row-gap: 2%; }
+.grid-row-gtl { grid-row-gap: 3%; row-gap: 3%; }
+

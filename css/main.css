@@ -1,0 +1,95 @@
+* { padding: 0; box-sizing: border-box; }
+
+body, a { font-family: 'Recursive', sans-serif; color: darkslategray; }
+
+.wrap { max-width: 1300px; margin: 0 auto; }
+
+img {
+  max-width: 100%;
+  height: auto;
+ }
+
+nav ul { display: flex; list-style-type: none; }
+
+nav li { flex: 1 1 auto; }
+
+nav a { 
+    display: block; 
+    background-color: #e0e0e0; 
+    line-height: 60px; 
+    text-align: center;
+    font-size: 1.4rem;
+    text-decoration: none;
+      }
+
+ div.sticky { position: -webkit-sticky; position: sticky; top: 0;z-index: 10; }
+
+nav a:hover{ background-color: #c0c0c0; }
+
+header { position: relative; }
+
+h1 { font-size: 2.5rem; font-weight: normal; }
+
+.titre { margin: 50px 0px 30px 0px; text-align: center; }
+
+.soustitre { margin: 50px 0px 30px 0px; text-align: center; }
+
+h2 { display: inline-block; margin: 20px 0px 20px 0px; font-size: 1.8rem; font-weight: normal; }
+
+.texte { padding: 15px;}
+.texte1 { background-color: #e0e0e0;}
+.texte2 { background-color: #c0c0c0;}
+.texte3 { background-color: #989898; color: white;}
+.texte4 { background-color: #707070; color: white;}
+
+table, th, td {
+  border:1px solid black;
+}
+
+
+.equipe {position: relative; padding-bottom: 70px; border: solid 1px; border-color: #e0e0e0;}
+
+.equipe:hover { box-shadow: 3px 3px 10px lightgray;}
+
+.equipetexte {padding: 2%;}
+
+.equipe img { display: block; width: 100%;}
+
+.equipe h3 { margin: 0px; padding-top: 15px; font-size: 1.8rem;}
+
+.equipe h4 { font-size: 1.3rem; font-weight: normal; color: #909090;}
+
+.equipe p { padding-bottom: 10px; font-size: 1.1rem;}
+
+.equipecontact { margin: none; text-align: center;}
+
+.equipecontact a { 
+  display: block; 
+  width: 95%; 
+  padding: 20px; 
+  position: absolute; 
+  left: 2.5%; 
+  bottom: 2.5%; 
+  background-color: #e0e0e0; 
+  font-size: 1.3rem; 
+  text-decoration: none;
+}
+
+.equipecontact a:hover { background-color: #c0c0c0;}
+
+footer { margin: 50px 0px 50px 0px; padding: 30px 20px 30px 20px; background-color: #e0e0e0; border-top: solid 3px silver;}
+
+footer a:hover { color: #4caf50;}
+
+.boutonmobile {display: none;}
+
+@media only screen and (max-width: 479px) {
+  .visible { display: block;}
+  .boutonmobile { display: block; text-align: right; padding: 2%; border-bottom: solid 1px silver;}
+  nav ul {margin: 0; display: none;}
+  nav li { border-bottom: solid 1px silver;}
+  nav li a {text-align: left; padding: 0 10% 0 10%;}
+
+  footer {margin-top: 150px; }
+}
+ 
