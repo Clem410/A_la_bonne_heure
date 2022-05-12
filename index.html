@@ -12,6 +12,17 @@
 
         <body>
 
+            <div class="loader">
+                <span class="lettre">L</span>
+                <span class="lettre">O</span>
+                <span class="lettre">A</span>
+                <span class="lettre">D</span>
+                <span class="lettre">I</span>
+                <span class="lettre">N</span>
+                <span class="lettre">G</span>
+            </div>
+            
+            <section class="contenu">
                 <!-- NAV - Menu -->
                 <div class="sticky">
                     <nav>
@@ -55,7 +66,7 @@
                             <h3>Design</h3>
                             <p>Nous vous offrons des modèles de sites personnalisables.</p>
                         </div>
-                    </section><!-- Fin de la section Propositions -->
+                    </section><!-- fin de la section posterite -->
                     
                     <!-- SECTION EQUIPE -->
                     <section id="equipe" class="grid-wrap grid-gt">
@@ -83,7 +94,7 @@
                             </div>
                         </div>
                     
-                    </section><!-- Fin de la section Equipe -->
+                    </section><!-- fin de la section Equipe -->
                     
                     </main>
                     
@@ -96,14 +107,16 @@
                     </footer>
                     
                     
-                    <!-- ------------------ -->
-                </div><!-- Fin div.wrap -->
                     
-                <script>
-                    function bascule_affichage(id) {
-                        bloc = document.getElementById(id);
-                        bloc.classList.toggle("visible");
-                    }
-                </script>
+                </div><!-- fin div.wrap -->
+            </section><!-- fin de la section contenu -->
+            
+            <script src="app.js"></script>
+            <script>
+                function bascule_affichage(id) {
+                    bloc = document.getElementById(id);
+                    bloc.classList.toggle("visible");
+                }
+            </script>
         </body>
 </html>
