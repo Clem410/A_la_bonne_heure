@@ -4,7 +4,7 @@ body, a { font-family: 'Recursive', sans-serif; color: darkslategray; }
 
 .wrap { max-width: 1300px; margin: 0 auto; }
 
-/* 
+/* Loader
 
 #loader {
   position: absolute;
