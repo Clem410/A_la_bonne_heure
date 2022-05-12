@@ -17,11 +17,10 @@ function fadeout(){
         $('.notLoaded').removeClass('notLoaded');
     });
 }
-*/
 
-/*
+
 window.setTimeout(()=>{
-    loader.style.display = 'none'
-    pageContent.style.display = 'block'
+    ('.loader').style.display = 'none'
+    ('.pageContent').style.display = 'block'
 },2100)
 */
