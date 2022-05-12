@@ -11,8 +11,8 @@
         </head>
 
         <body>
-
-            <div class="loader">
+            
+            <div id="loader">
                 <span class="lettre">L</span>
                 <span class="lettre">O</span>
                 <span class="lettre">A</span>
@@ -22,7 +22,7 @@
                 <span class="lettre">G</span>
             </div>
             
-            <section class="contenu">
+            <div class="notLoaded">
                 <!-- NAV - Menu -->
                 <div class="sticky">
                     <nav>
@@ -38,8 +38,7 @@
                 </div>
 
                 <div class="wrap"> <!-- Le contenu respecte la GRID -->
-                    
-                    
+                        
                     <!-- HEADER - En-tête de page -->
                     <header>
                         <section id="header" class="grid-wrap">
@@ -52,71 +51,65 @@
                             </div>
                         </section>
                     </header>
-                    
-                    
+                        
+                        
                     <!-- MAIN - Contenu principal de la page du main -->
                     <main>
                     
-                    <!-- SECTION POSTERITE -->
-                    <section id="description" class="grid-wrap">
-                        <div class="soustitre col-12">
-                            <h2>Page pour la postérité</h2>
-                        </div>
-                        <div class="texte texte1 col-12">
-                            <h3>Design</h3>
-                            <p>Nous vous offrons des modèles de sites personnalisables.</p>
-                        </div>
-                    </section><!-- fin de la section posterite -->
-                    
-                    <!-- SECTION EQUIPE -->
-                    <section id="equipe" class="grid-wrap grid-gt">
-                        <div class="soustitre col-12">
-                            <h2>Notre équipe</h2>
-                        </div>
-                    
-                        <div class="equipe col-6 xs-12">
-                            <img src="images/team1.jpg" alt="Clément">
-                            <div class="equipetexte">
-                                <h3>Clément Saux</h3>
+                        <!-- SECTION POSTERITE -->
+                        <section id="description" class="grid-wrap">
+                            <div class="soustitre col-12">
+                                <h2>Page pour la postérité</h2>
+                            </div>
+                            <div class="texte texte1 col-12">
+                                <h3>Design</h3>
+                                <p>Nous vous offrons des modèles de sites personnalisables.</p>
+                            </div>
+                        </section><!-- fin de la section posterite -->
+                        
+                        <!-- SECTION EQUIPE -->
+                        <section id="equipe" class="grid-wrap grid-gt">
+                            <div class="soustitre col-12">
+                                <h2>Notre équipe</h2>
+                            </div>
+                        
+                            <div class="equipe col-6 xs-12">
+                                <img src="images/team1.jpg" alt="Clément">
+                                <div class="equipetexte">
+                                    <h3>Clément Saux</h3>
+                                    <h4>CoFounder and writer</h4>
+                                    <p>Eingineering student and watches enthusiast.</p>
+                                    <p class="equipecontact"><a href="#contact">Contact</a></p>
+                                </div>
+                            </div>
+                        
+                            <div class="equipe col-6 xs-12">
+                                <img src="images/lucas.jpg" alt="John">
+                                <div class="equipetexte">
+                                <h3>Lucas Bellofatto</h3>
                                 <h4>CoFounder and writer</h4>
-                                <p>Eingineering student and watches enthusiast.</p>
+                                <p>Eingineering student and fishing enthusiast.</p>
                                 <p class="equipecontact"><a href="#contact">Contact</a></p>
+                                </div>
                             </div>
-                        </div>
-                    
-                        <div class="equipe col-6 xs-12">
-                            <img src="images/lucas.jpg" alt="John">
-                            <div class="equipetexte">
-                            <h3>Lucas Bellofatto</h3>
-                            <h4>CoFounder and writer</h4>
-                            <p>Eingineering student and fishing enthusiast.</p>
-                            <p class="equipecontact"><a href="#contact">Contact</a></p>
-                            </div>
-                        </div>
-                    
-                    </section><!-- fin de la section Equipe -->
-                    
+                        
+                        </section><!-- fin de la section Equipe -->
+                        
                     </main>
-                    
-                    
+                        
+                        
                     <!-- Footer - Pied de page -->
                     <footer id="contact">
                         <h4>À la Bonne Heure</h4>
                         <p><a href="#">Haut de la page</a></p>
                         <p>Watches Consulting - <a href="http://a_la_bonne_heure.com" title="site A la Bonne Heure" >www.a_la_bonne_heure.com</a></p>
                     </footer>
-                    
-                    
-                    
+                        
+                        
+                        
                 </div><!-- fin div.wrap -->
-            </section><!-- fin de la section contenu -->
-            
+            </div>    
+
             <script src="app.js"></script>
-            <script>
-                function bascule_affichage(id) {
-                    bloc = document.getElementById(id);
-                    bloc.classList.toggle("visible");
-                }
-            </script>
         </body>
 </html>

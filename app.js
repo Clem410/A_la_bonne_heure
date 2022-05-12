@@ -1,6 +1,19 @@
-const loader = document.querySelector('.loader');
+function bascule_affichage(id) {
+    bloc = document.getElementById(id);
+    bloc.classList.toggle("visible");
+}
 
-window.addEventListener('load', () => {
+/*
+$(document).ready(function(){   
+    window.setTimeout('fadeout();', 2000);
+});
 
-    loader.classlist.add('fondu-out');
-})
+function fadeout(){
+
+    $('#loader').delay(2000).fadeOut('slow', function() {
+        $('.notLoaded').removeClass('notLoaded');
+    });
+}
+*/
+
+
