@@ -17,6 +17,7 @@ nav li {flex: 1 1 auto; }
 
 nav a { 
     display: block; 
+    border-bottom: solid 1px white;
     background-color: #203f64; 
     line-height: 60px; 
     text-align: center;
@@ -49,7 +50,7 @@ h2 {
   font-weight: normal; 
 }
 
-p {text-align: justify; font-size: 1.4rem;}
+p {text-align: justify; font-size: 1.2rem;}
 
 .titre p { text-align: center;}
 
