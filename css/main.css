@@ -50,9 +50,30 @@ h2 {
   font-weight: normal; 
 }
 
-h3 { font-size: 1.8rem;}
+h3 { text-align: center; font-size: 1.8rem;}
 
 p {text-align: justify; font-size: 1.2rem;}
+
+.field {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+.class {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+.luxe {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
 
 .titre p { text-align: center;}
 
@@ -115,6 +136,8 @@ th, td {
 .equipecontact a:hover { background-color: #364a61; width: 95%;}
 
 footer { margin: 50px 0px 50px 0px; padding: 30px 20px 30px 20px; color: #203f64; background-color: #d6d3d3; border-top: solid 3px silver;}
+
+footer p {text-align: left;}
 
 footer a:hover { color: #364a61;}
 
