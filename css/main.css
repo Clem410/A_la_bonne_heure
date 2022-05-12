@@ -86,15 +86,15 @@ p {text-align: justify; font-size: 1.2rem;}
 
 #titreDescription { font-size: 2rem ;}
 
-table, th, td {
-  border: 1px solid black;
+table {
+  border-collapse: collapse;
 }
 
 th, td {
   padding: 15px;
 }
 
-tr:nth-child(even) {background-color: #c0bebe;}
+tr:nth-child(even) {background-color: #d6d3d3;}
 
 .tableau { text-align: center; margin: 0 auto; }
 
