@@ -1,6 +1,6 @@
 * { padding: 0; box-sizing: border-box; }
 
-body, a { font-family: 'Recursive', sans-serif; color: #18181a; }
+body, a { font-family: 'Roboto Condensed', sans-serif; color: #18181a; }
 
 .wrap { max-width: 1300px; margin: 0 auto; }
 
@@ -8,14 +8,16 @@ img {
   max-width: 100%;
   height: auto;
  }
-
+.equipeImg {
+  object-fit: cover;
+}
 nav ul { display: flex; list-style-type: none; }
 
 nav li {flex: 1 1 auto; }
 
 nav a { 
     display: block; 
-    background-color: #2f435e; 
+    background-color: #203f64; 
     line-height: 60px; 
     text-align: center;
     font-size: 1.4rem;
@@ -25,7 +27,7 @@ nav a {
 
  div.sticky { position: -webkit-sticky; position: sticky; top: 0;z-index: 10; }
 
-nav a:hover{ background-color: #44566c; }
+nav a:hover{ background-color: #364a61; }
 
 header { position: relative; }
 
@@ -33,17 +35,13 @@ body { background-color: #ececec;}
 
 h1 { font-size: 2.5rem; font-weight: normal; }
 
-.titre { margin: 50px 0px 30px 0px; text-align: center; }
+.titre { margin: 0px 0px 30px 0px; text-align: center; }
 
-.soustitre { margin: 50px 0px 30px 0px; text-align: center; }
+.soustitre { margin: 30px 0px 10px 0px; text-align: center; }
 
 h2 { display: inline-block; margin: 20px 0px 20px 0px; font-size: 1.8rem; font-weight: normal; }
 
-.texte { padding: 15px;}
-.texte1 { background-color: #e0e0e0;}
-.texte2 { background-color: #c0c0c0;}
-.texte3 { background-color: #989898; color: white;}
-.texte4 { background-color: #707070; color: white;}
+.texte { padding: 15px; background-color: #e0e0e0;}
 
 table, th, td {
   border:1px solid black;
@@ -73,16 +71,19 @@ table, th, td {
   position: absolute; 
   left: 2.5%; 
   bottom: 2.5%; 
-  background-color: #e0e0e0; 
+  background-color: #203f64; 
   font-size: 1.3rem; 
   text-decoration: none;
+  color: #ececec;
 }
 
-.equipecontact a:hover { background-color: #c0c0c0;}
+.equipecontact a:hover { background-color: #364a61;}
 
-footer { margin: 50px 0px 50px 0px; padding: 30px 20px 30px 20px; background-color: #e0e0e0; border-top: solid 3px silver;}
+footer { margin: 50px 0px 50px 0px; padding: 30px 20px 30px 20px; color: #203f64; background-color: #c4c1c1; border-top: solid 3px silver;}
 
-footer a:hover { color: #4caf50;}
+footer a:hover { color: #364a61;}
+
+.up {align-content: right;}
 
 .boutonmobile {display: none;}
 
