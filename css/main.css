@@ -54,7 +54,16 @@ table, th, td {
 
 .equipetexte {padding: 2%;}
 
-.equipe img { display: block; width: 100%;}
+#clement {
+  height: 480px;
+  width: 800px;
+}
+
+#lucas {
+  height: 480px;
+  width: 800px;
+}
+.equipe img { object-fit: fill;}
 
 .equipe h3 { margin: 0px; padding-top: 15px; font-size: 1.8rem;}
 
@@ -82,8 +91,6 @@ table, th, td {
 footer { margin: 50px 0px 50px 0px; padding: 30px 20px 30px 20px; color: #203f64; background-color: #c4c1c1; border-top: solid 3px silver;}
 
 footer a:hover { color: #364a61;}
-
-.up {align-content: right;}
 
 .boutonmobile {display: none;}
 
