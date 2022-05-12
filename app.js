@@ -15,5 +15,7 @@ function fadeout(){
     });
 }
 */
-
-
+window.setTimeout(()=>{
+    loader.style.display = 'none'
+    pageContent.style.display = 'block'
+},2100)
