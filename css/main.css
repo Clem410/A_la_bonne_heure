@@ -94,6 +94,8 @@ th, td {
   padding: 15px;
 }
 
+tr:nth-child(even) {background-color: #c0bebe;}
+
 .tableau { text-align: center; margin: 0 auto; }
 
 
